@@ -1,0 +1,417 @@
+/* Evihian - Orange/Gray/Black Theme */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Root variables for consistent theming */
+:root {
+    --primary-orange: #ffa31a;
+    --secondary-gray: #808080;
+    --background-black: #1b1b1b;
+    --secondary-black: #292929;
+    --card-black: #292929;
+    --text-white: #ffffff;
+    --text-gray: #808080;
+    --border-gray: #808080;
+    --hover-orange: #e5921a;
+    --light-orange: #ffb84d;
+}
+
+/* Main app background */
+.stApp {
+    background-color: var(--background-black) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/* Main container */
+.main .block-container {
+    background-color: var(--background-black) !important;
+    padding-top: 2rem !important;
+    max-width: 1200px !important;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: var(--secondary-black) !important;
+}
+
+.css-1lcbmhc {
+    background-color: var(--secondary-black) !important;
+}
+
+/* Sidebar content */
+.css-17eq0hr {
+    background-color: var(--secondary-black) !important;
+    color: var(--text-white) !important;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-white) !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+h1 {
+    color: var(--primary-orange) !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+    font-size: 2.5rem !important;
+}
+
+/* Text elements */
+p,
+div,
+span,
+label {
+    color: var(--text-white) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+/* Chat messages container */
+.stChatMessage {
+    background-color: var(--card-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 10px !important;
+    margin: 0.5rem 0 !important;
+    padding: 1rem !important;
+}
+
+/* User messages */
+.stChatMessage[data-testid="chat-message-user"] {
+    background-color: var(--secondary-black) !important;
+    border-left: 4px solid var(--primary-orange) !important;
+}
+
+/* Assistant messages */
+.stChatMessage[data-testid="chat-message-assistant"] {
+    background-color: var(--card-black) !important;
+    border-left: 4px solid var(--light-orange) !important;
+}
+
+/* Chat input */
+.stChatInput > div > div > div {
+    background-color: var(--secondary-black) !important;
+    border: 2px solid var(--border-gray) !important;
+    border-radius: 25px !important;
+    color: var(--text-white) !important;
+}
+
+.stChatInput > div > div > div:focus {
+    border-color: var(--primary-orange) !important;
+    box-shadow: 0 0 0 2px rgba(255, 163, 26, 0.2) !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: var(--primary-orange) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-family: "Inter", sans-serif !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton > button:hover {
+    background-color: var(--hover-orange) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(255, 163, 26, 0.3) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0) !important;
+}
+
+/* Secondary buttons */
+.stButton > button[kind="secondary"] {
+    background-color: transparent !important;
+    border: 2px solid var(--primary-orange) !important;
+    color: var(--primary-orange) !important;
+}
+
+.stButton > button[kind="secondary"]:hover {
+    background-color: var(--primary-orange) !important;
+    color: white !important;
+}
+
+/* Text input fields */
+.stTextInput > div > div > input {
+    background-color: var(--secondary-black) !important;
+    border: 2px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+    color: var(--text-white) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: var(--primary-orange) !important;
+    box-shadow: 0 0 0 2px rgba(255, 163, 26, 0.2) !important;
+}
+
+/* Select boxes */
+.stSelectbox > div > div > div {
+    background-color: var(--secondary-black) !important;
+    border: 2px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+    color: var(--text-white) !important;
+}
+
+/* Text areas */
+.stTextArea > div > div > textarea {
+    background-color: var(--secondary-black) !important;
+    border: 2px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+    color: var(--text-white) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.stTextArea > div > div > textarea:focus {
+    border-color: var(--primary-orange) !important;
+    box-shadow: 0 0 0 2px rgba(255, 163, 26, 0.2) !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background-color: var(--secondary-black) !important;
+    color: var(--text-white) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+}
+
+.streamlit-expanderContent {
+    background-color: var(--card-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: var(--secondary-black) !important;
+    border-radius: 8px !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: var(--text-gray) !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary-orange) !important;
+    color: white !important;
+}
+
+/* Metrics */
+.metric-container {
+    background-color: var(--card-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    margin: 0.5rem 0 !important;
+}
+
+/* Success/Info/Warning/Error messages */
+.stSuccess {
+    background-color: var(--card-black) !important;
+    border-left: 4px solid #00ff88 !important;
+    color: var(--text-white) !important;
+}
+
+.stInfo {
+    background-color: var(--card-black) !important;
+    border-left: 4px solid var(--primary-orange) !important;
+    color: var(--text-white) !important;
+}
+
+.stWarning {
+    background-color: var(--card-black) !important;
+    border-left: 4px solid #ffb800 !important;
+    color: var(--text-white) !important;
+}
+
+.stError {
+    background-color: var(--card-black) !important;
+    border-left: 4px solid #ff4444 !important;
+    color: var(--text-white) !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div {
+    background-color: var(--primary-orange) !important;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-top-color: var(--primary-orange) !important;
+}
+
+/* Code blocks */
+pre {
+    background-color: var(--secondary-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+    color: var(--text-white) !important;
+}
+
+code {
+    background-color: var(--secondary-black) !important;
+    color: var(--primary-orange) !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+}
+
+/* Dataframes */
+.stDataFrame {
+    background-color: var(--card-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 8px !important;
+}
+
+/* Plotly charts background */
+.js-plotly-plot .plotly .main-svg {
+    background-color: var(--card-black) !important;
+}
+
+/* Sidebar widgets */
+.stSidebar .stSelectbox > div > div > div,
+.stSidebar .stTextInput > div > div > input,
+.stSidebar .stTextArea > div > div > textarea {
+    background-color: var(--background-black) !important;
+    border: 2px solid var(--border-gray) !important;
+    color: var(--text-white) !important;
+}
+
+/* Custom utility classes */
+.orange-text {
+    color: var(--primary-orange) !important;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        45deg,
+        var(--primary-orange),
+        var(--light-orange)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--card-black) !important;
+    border: 1px solid var(--border-gray) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 1rem 0 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.card:hover {
+    border-color: var(--primary-orange) !important;
+    box-shadow: 0 6px 12px rgba(255, 163, 26, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hide Streamlit branding */
+#MainMenu {
+    visibility: hidden;
+}
+footer {
+    visibility: hidden;
+}
+header {
+    visibility: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-black);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-orange);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-orange);
+}
+
+/* Animation for smooth transitions */
+* {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-top: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    .stButton > button {
+        width: 100% !important;
+        margin: 0.25rem 0 !important;
+    }
+}
+
+/* Additional styling for better visual appeal */
+.stSelectbox label {
+    color: var(--text-white) !important;
+    font-weight: 500 !important;
+}
+
+.stTextInput label {
+    color: var(--text-white) !important;
+    font-weight: 500 !important;
+}
+
+.stTextArea label {
+    color: var(--text-white) !important;
+    font-weight: 500 !important;
+}
+
+/* Sidebar header styling */
+.css-1544g2n {
+    color: var(--primary-orange) !important;
+    font-weight: 600 !important;
+}
+
+/* Sidebar subheader styling */
+.css-10trblm {
+    color: var(--text-white) !important;
+    font-weight: 500 !important;
+}
+
+/* Custom markdown styling */
+.stMarkdown {
+    color: var(--text-white) !important;
+}
+
+/* Container styling */
+.css-1kyxreq {
+    background-color: var(--background-black) !important;
+}
